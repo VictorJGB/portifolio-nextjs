@@ -5,8 +5,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Next Template',
-  description: 'Template de projeto com next, eslint e shadcn',
+  title: 'Portifolio Nextjs',
 }
 
 export default function RootLayout({
