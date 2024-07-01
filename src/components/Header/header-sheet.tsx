@@ -33,8 +33,8 @@ export default function HeaderSheet() {
               href="#home"
               className="flex items-center justify-start text-foreground"
             >
-              <LinkIcon className="mr-4 h-6 w-6" />
-              <span className="text-center text-3xl font-bold">
+              <LinkIcon className="mr-4 h-4 w-4 sm:h-6 sm:w-6" />
+              <span className="text-center text-xl font-bold sm:text-3xl">
                 Meu portifólio
               </span>
             </Link>
