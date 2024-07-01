@@ -10,11 +10,11 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="row-span-1 flex w-full items-center justify-around bg-black py-4">
+    <footer className="row-span-1 flex w-full flex-col items-center justify-around gap-4 bg-black py-4 sm:flex-row sm:gap-0">
       {/* links */}
-      <div className="flex h-full flex-col items-start justify-start">
+      <div className="flex h-full flex-col items-center justify-center sm:items-start sm:justify-start">
         <h2 className="text-start text-xl font-bold text-primary">Links</h2>
-        <nav className="flex flex-col items-start justify-start">
+        <nav className="flex flex-col items-center justify-center sm:items-start sm:justify-start">
           <Link
             href="#home"
             className="text-base text-background hover:text-accent"
@@ -43,7 +43,7 @@ export default function Footer() {
       </div>
 
       {/* contact */}
-      <div className="flex h-full flex-col items-start justify-start gap-3">
+      <div className="flex h-full flex-col items-center justify-center gap-3 sm:items-start sm:justify-start">
         <h2 className="text-start text-xl font-bold text-primary">
           Contate-me
         </h2>
