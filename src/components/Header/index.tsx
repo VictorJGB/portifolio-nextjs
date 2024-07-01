@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import HeaderSheet from './header-sheet'
 
 export default function Header() {
   return (
@@ -6,7 +7,7 @@ export default function Header() {
       <Link href="/">
         <h1 className="text-3xl font-bold text-foreground">Meu Portifólio</h1>
       </Link>
-      <nav className="flex items-center justify-center gap-3 text-base font-semibold">
+      <nav className="hidden items-center justify-center gap-3 text-base font-semibold lg:flex">
         <Link href="#home" className="transition hover:text-primary">
           Sobre mim
         </Link>
@@ -20,6 +21,7 @@ export default function Header() {
           Projetos
         </Link>
       </nav>
+      <HeaderSheet />
     </header>
   )
 }
