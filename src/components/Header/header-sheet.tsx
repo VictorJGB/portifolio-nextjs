@@ -1,3 +1,5 @@
+'use client'
+
 import { Button } from '@/components/ui/button'
 import {
   Sheet,
@@ -16,11 +18,14 @@ import {
 } from '@/components/ui/tooltip'
 import { Github, Instagram, LinkIcon, Linkedin, Mail, Menu } from 'lucide-react'
 import Link from 'next/link'
+import { useState } from 'react'
 import { Separator } from '../ui/separator'
 
 export default function HeaderSheet() {
+  const [isOpen, setIsOpen] = useState<boolean>(false)
+
   return (
-    <Sheet>
+    <Sheet open={isOpen} onOpenChange={setIsOpen}>
       <SheetTrigger className="flex lg:hidden" asChild>
         <Button variant="outline" className="border-[1.5px]">
           <Menu className="h-4 w-4" />
@@ -29,15 +34,9 @@ export default function HeaderSheet() {
       <SheetContent>
         <SheetHeader>
           <SheetTitle>
-            <Link
-              href="#home"
-              className="flex items-center justify-start text-foreground"
-            >
-              <LinkIcon className="mr-4 h-4 w-4 sm:h-6 sm:w-6" />
-              <span className="text-center text-xl font-bold sm:text-3xl">
-                Meu portifólio
-              </span>
-            </Link>
+            <span className="text-center text-xl font-bold sm:text-3xl">
+              Meu portifólio
+            </span>
           </SheetTitle>
           <SheetDescription>
             Navegue pelo portifólio através dos links abaixo
@@ -48,6 +47,7 @@ export default function HeaderSheet() {
           {/* about me */}
           <Button
             variant={'outline'}
+            onClick={() => setIsOpen(false)}
             className="border-[1.5px] border-primary text-primary"
             asChild
           >
@@ -59,6 +59,7 @@ export default function HeaderSheet() {
           {/* skills */}
           <Button
             variant={'outline'}
+            onClick={() => setIsOpen(false)}
             className="border-[1.5px] border-primary text-primary"
             asChild
           >
@@ -70,6 +71,7 @@ export default function HeaderSheet() {
           {/* experiences */}
           <Button
             variant={'outline'}
+            onClick={() => setIsOpen(false)}
             className="border-[1.5px] border-primary text-primary"
             asChild
           >
@@ -81,6 +83,7 @@ export default function HeaderSheet() {
           {/* projects */}
           <Button
             variant={'outline'}
+            onClick={() => setIsOpen(false)}
             className="border-[1.5px] border-primary text-primary"
             asChild
           >
