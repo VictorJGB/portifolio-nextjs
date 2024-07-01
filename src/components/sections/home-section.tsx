@@ -13,10 +13,10 @@ import { Button } from '../ui/button'
 
 export default function HomeSection() {
   return (
-    <div className="col-span-1 row-span-1 flex items-center justify-around">
+    <div className="col-span-1 row-span-1 flex flex-col items-center justify-around py-5 md:flex-row md:py-0">
       {/* info container */}
-      <div className="flex flex-1 flex-col items-start justify-center gap-2 md:w-1/2">
-        <h1 className="text-start text-3xl font-bold text-foreground">
+      <div className="flex flex-1 flex-col items-center justify-center gap-2 md:w-1/2 md:items-start md:justify-start">
+        <h1 className="text-center text-3xl font-bold text-foreground md:text-start">
           Seja bem vindo(a), me chamo {<br />}{' '}
           <strong className="text-primary">Victor Jerrysson</strong>
         </h1>
@@ -27,7 +27,7 @@ export default function HomeSection() {
           Sou apaixonado por tecnologia e como ela conecta as pessoas pelo
           mundo.
         </p>
-        <div className="my-2 flex w-full items-center justify-start gap-3">
+        <div className="my-2 flex w-full items-center justify-center gap-3 md:justify-start">
           {/* github */}
           <TooltipProvider>
             <Tooltip>
@@ -97,7 +97,7 @@ export default function HomeSection() {
             </Tooltip>
           </TooltipProvider>
         </div>
-        <div className="h-full w-full items-center justify-center">
+        <div className="flex w-full items-center justify-center md:items-start md:justify-start">
           <Button
             asChild
             className="rounded-full border border-primary text-base hover:bg-background hover:text-primary"
@@ -112,7 +112,7 @@ export default function HomeSection() {
         </div>
       </div>
       {/* image container */}
-      <div className="flex w-full flex-col items-center justify-center md:w-1/2">
+      <div className="flex w-full flex-col items-center justify-center sm:w-2/3 md:w-1/2">
         <Image
           className="max-w-full"
           src={'/sections/home/profile.png'}
