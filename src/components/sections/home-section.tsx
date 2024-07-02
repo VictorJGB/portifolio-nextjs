@@ -20,18 +20,18 @@ export default function HomeSection() {
       <div className="flex h-full w-full flex-col items-center justify-around md:flex-row">
         {/* info container */}
         <div className="flex flex-1 flex-col items-center justify-center gap-2 md:w-1/2 md:items-start md:justify-start">
-          <h1 className="text-center text-3xl font-bold text-foreground md:text-start">
+          <h1 className="lg:text-heading-1 text-center text-3xl font-bold text-foreground md:text-start">
             Seja bem vindo(a), me chamo {<br />}{' '}
             <strong className="text-primary">Victor Jerrysson</strong>
           </h1>
-          <h2 className="text-xl font-semibold text-primary">
+          <h2 className="lg:text-heading-2 text-xl font-semibold text-primary">
             Desenvolvedor Front-end
           </h2>
-          <p className="font-regular text-start text-zinc-500">
+          <p className="font-regular text-center text-zinc-500 md:text-start">
             Sou apaixonado por tecnologia e como ela conecta as pessoas pelo
             mundo.
           </p>
-          <div className="my-2 flex w-full items-center justify-center gap-3 md:justify-start">
+          <div className="my-5 flex w-full items-center justify-center gap-3 md:justify-start">
             {/* github */}
             <TooltipProvider>
               <Tooltip>
@@ -116,7 +116,7 @@ export default function HomeSection() {
           </div>
         </div>
         {/* image container */}
-        <div className="flex w-full flex-col items-center justify-center sm:w-2/3 md:w-1/2">
+        <div className="flex w-2/3 flex-col items-center justify-center md:w-1/2">
           <Image
             className="max-w-full"
             src={'/sections/home/profile.png'}

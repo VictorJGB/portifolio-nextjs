@@ -7,11 +7,13 @@ export default function AboutSection() {
       className="col-span-1 row-span-1 flex flex-col items-center justify-center md:flex-row md:justify-around"
     >
       {/* image container */}
-      <div className="bg-about-section h-full w-full bg-cover md:w-1/2"></div>
+      <div className="h-full w-full bg-about-section bg-cover md:w-1/2"></div>
       {/* info container */}
       <div className="flex h-full w-full flex-col items-center justify-center bg-black py-4 shadow-lg sm:px-4 md:w-1/2 lg:px-10">
         <div className="flex h-full w-full flex-col items-center justify-center gap-4 md:w-2/3 md:items-start">
-          <h1 className="text-5xl font-bold text-primary">Sobre mim</h1>
+          <h1 className="lg:text-heading-1 text-3xl font-bold text-primary">
+            Sobre mim
+          </h1>
           <p className="text-justify text-base text-background">
             Sou um <strong className="text-primary">desenvolvedor</strong>{' '}
             apaixonado por criar experiências de usuário incríveis e interfaces
@@ -28,13 +30,13 @@ export default function AboutSection() {
             <h2 className="text-center text-xl font-semibold text-background">
               Alguns dos meus <i>hobbies</i>
             </h2>
-            <div className="grid grid-cols-3 place-items-center">
+            <div className="grid grid-cols-3 place-items-center gap-3">
               {/* gym */}
               <div className="col-span-1 row-span-1 flex-col items-center justify-center gap-3">
                 <div className="flex items-center justify-center text-primary">
                   <Dumbbell className="h-8 w-8" />
                 </div>
-                <span className="text-base font-semibold text-background">
+                <span className="w-full text-center text-base font-semibold text-background">
                   Academia
                 </span>
               </div>
@@ -43,7 +45,7 @@ export default function AboutSection() {
                 <div className="flex items-center justify-center text-primary">
                   <Gamepad2 className="h-8 w-8" />
                 </div>
-                <span className="text-base font-semibold text-background">
+                <span className="w-full text-center text-base font-semibold text-background">
                   Jogos
                 </span>
               </div>
@@ -52,7 +54,7 @@ export default function AboutSection() {
                 <div className="flex items-center justify-center text-primary">
                   <Tv2 className="h-8 w-8" />
                 </div>
-                <span className="text-base font-semibold text-background">
+                <span className="w-full text-center text-base font-semibold text-background">
                   Séries e Filmes
                 </span>
               </div>
