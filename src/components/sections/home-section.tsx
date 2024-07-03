@@ -126,7 +126,7 @@ export default function HomeSection() {
           />
         </div>
         <Image
-          className="absolute bottom-1 left-1/2 hidden mix-blend-multiply md:flex"
+          className="absolute bottom-1 left-1/2 hidden -translate-x-1/2 -translate-y-1 mix-blend-multiply md:flex"
           src={'/sections/home/scrolling_mousewheel.gif'}
           alt="mouse_gif"
           width={100}

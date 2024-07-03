@@ -4,14 +4,14 @@ export default function AboutSection() {
   return (
     <div
       id="about"
-      className="col-span-1 row-span-1 flex flex-col items-center justify-center md:flex-row md:justify-around"
+      className="col-span-1 row-span-1 flex flex-col items-center justify-center md:flex-row md:justify-around "
     >
       {/* image container */}
       <div className="h-full w-full bg-about-section bg-cover md:w-1/2"></div>
       {/* info container */}
-      <div className="flex h-full w-full flex-col items-center justify-center bg-black py-4 shadow-lg sm:px-4 md:w-1/2 lg:px-10">
+      <div className="flex h-full w-full flex-col items-center justify-center bg-black px-4 py-4 shadow-lg md:w-1/2 lg:px-10">
         <div className="flex h-full w-full flex-col items-center justify-center gap-4 md:w-2/3 md:items-start">
-          <h1 className="lg:text-heading-1 text-3xl font-bold text-primary">
+          <h1 className="text-3xl font-bold text-primary lg:text-heading-1">
             Sobre mim
           </h1>
           <p className="text-justify text-base text-background">

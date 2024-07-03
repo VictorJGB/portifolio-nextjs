@@ -8,6 +8,7 @@ export default function Home() {
       <HomeSection />
       <AboutSection />
       <SkillSection />
+      <div className="col-span-1 row-span-1 bg-black"></div>
     </main>
   )
 }
