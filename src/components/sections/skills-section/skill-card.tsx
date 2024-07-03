@@ -1,4 +1,5 @@
-import { ElementType } from 'react'
+import { cn } from '@/lib/utils'
+import { ComponentProps, ElementType } from 'react'
 
 type CardProps = {
   title: string
@@ -10,16 +11,24 @@ export default function SkillCard({
   title,
   description,
   icon: Icon,
-}: CardProps) {
+  className,
+  ...props
+}: CardProps & ComponentProps<'div'>) {
   return (
-    <div className="container col-span-1 flex h-min flex-col items-center justify-center gap-6 rounded-md border border-zinc-400 py-4 shadow-md transition duration-300 hover:scale-105 hover:border-primary hover:text-primary hover:shadow-primary">
+    <div
+      className={cn(
+        'container flex flex-col items-center justify-center gap-4 rounded-md border border-zinc-400 py-4 shadow-md transition duration-300 hover:scale-105 hover:border-primary hover:text-primary hover:shadow-primary lg:gap-6',
+        className,
+      )}
+      {...props}
+    >
       <div className="flex w-full items-center justify-start">
-        <Icon className="mr-6 h-6 w-6 text-inherit lg:h-10 lg:w-10" />
-        <span className="text-xl font-bold text-inherit lg:text-2xl">
+        <Icon className="mr-6 h-5 w-5 text-inherit md:h-6 md:w-6 lg:h-8 lg:w-8" />
+        <span className="text-base font-bold text-inherit md:text-xl lg:text-2xl">
           {title}
         </span>
       </div>
-      <p className="text-justify text-base font-medium text-zinc-500 lg:text-lg">
+      <p className="text-justify text-sm font-medium text-zinc-500 md:text-base lg:text-lg">
         {description}
       </p>
     </div>
