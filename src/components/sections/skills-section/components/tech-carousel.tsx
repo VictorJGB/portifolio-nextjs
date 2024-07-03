@@ -36,6 +36,16 @@ const techData: techCardProps[] = [
     title: 'React Hook Form',
     link: 'https://www.react-hook-form.com/',
   },
+  {
+    icon: '/sections/skills/zod.svg',
+    title: 'Zod',
+    link: 'https://zod.dev/',
+  },
+  {
+    icon: '/sections/skills/eslint.svg',
+    title: 'Eslint',
+    link: 'https://eslint.org/',
+  },
 ]
 
 export default function TechCarousel({
