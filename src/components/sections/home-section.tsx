@@ -20,11 +20,11 @@ export default function HomeSection() {
       <div className="flex h-full w-full flex-col items-center justify-around md:flex-row">
         {/* info container */}
         <div className="flex flex-1 flex-col items-center justify-center gap-2 md:w-1/2 md:items-start md:justify-start">
-          <h1 className="lg:text-heading-1 text-center text-3xl font-bold text-foreground md:text-start">
+          <h1 className="text-center text-3xl font-bold text-foreground md:text-start lg:text-heading-1">
             Seja bem vindo(a), me chamo {<br />}{' '}
             <strong className="text-primary">Victor Jerrysson</strong>
           </h1>
-          <h2 className="lg:text-heading-2 text-xl font-semibold text-primary">
+          <h2 className="text-xl font-semibold text-primary lg:text-heading-2">
             Desenvolvedor Front-end
           </h2>
           <p className="font-regular text-center text-zinc-500 md:text-start">
@@ -125,15 +125,15 @@ export default function HomeSection() {
             height={600}
           />
         </div>
+        <Image
+          className="absolute bottom-1 left-1/2 hidden mix-blend-multiply md:flex"
+          src={'/sections/home/scrolling_mousewheel.gif'}
+          alt="mouse_gif"
+          width={100}
+          height={100}
+          unoptimized
+        />
       </div>
-      <Image
-        className="hidden md:flex"
-        src={'/sections/home/scrolling_mousewheel.gif'}
-        alt="mouse_gif"
-        width={100}
-        height={100}
-        unoptimized
-      />
     </div>
   )
 }
