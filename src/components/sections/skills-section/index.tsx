@@ -1,13 +1,19 @@
-import { CodeXml, Cpu, MonitorSmartphone, PencilRuler } from 'lucide-react'
-import SkillCard from './skill-card'
+import {
+  CodeXml,
+  FolderSync,
+  MonitorSmartphone,
+  PencilRuler,
+} from 'lucide-react'
+import SkillCard from './components/skill-card'
+import TechCarousel from './components/tech-carousel'
 
 export default function SkillSection() {
   return (
     <div
       id="skills"
-      className="container col-span-1 row-span-1 flex flex-col items-center justify-around gap-4 py-4"
+      className="container col-span-1 row-span-1 flex flex-col items-center justify-around gap-6 py-4"
     >
-      <div className="grid w-full place-items-center gap-3 py-2 text-center lg:py-5">
+      <div className="grid w-full place-content-center place-items-center gap-3 py-2 text-center lg:py-5">
         <h1 className="text-3xl font-bold text-primary lg:text-heading-1">
           Minhas Habilidades
         </h1>
@@ -16,7 +22,7 @@ export default function SkillSection() {
         </h2>
       </div>
       {/* skills */}
-      <div className="grid h-full w-full grid-cols-1 grid-rows-4 place-content-center gap-4 sm:grid-cols-2 sm:grid-rows-2 lg:grid-cols-4 lg:grid-rows-[auto] lg:gap-6">
+      <div className="grid h-full w-full grid-cols-1 grid-rows-4 place-content-center gap-4 sm:grid-cols-2 sm:grid-rows-2 xl:grid-cols-4 xl:grid-rows-[auto]">
         {/* DESIGN */}
         <SkillCard
           className="col-span-1"
@@ -46,19 +52,17 @@ export default function SkillSection() {
         {/* Tecnologias */}
         <SkillCard
           className="col-span-1"
-          icon={Cpu}
-          title="Tecnologias modernas"
-          description="Estar em constante sintonia com as tecnologias do mercado de desenvolvimento, significa ter uma produtividade maior, redução de custos e uma melhora na experiência do usuário, consequentemente, influenciando na satisfação do cliente final"
+          icon={FolderSync}
+          title="Sintonia"
+          description="Estar em constante sintonia com as tecnologias do mercado de desenvolvimento, significa ter uma produtividade maior, redução de custos e uma melhora na experiência do usuário"
         />
       </div>
       {/* techs */}
-      <div className="flex flex-1 flex-col items-center justify-around md:flex-row md:items-start">
-        <h2 className="text-xl text-zinc-400">Tecnologias que domino</h2>
-        <div className="col-span-1 row-span-3 grid grid-cols-1 grid-rows-4 place-content-center gap-2 sm:grid-cols-2 sm:grid-rows-2 lg:grid-cols-4 lg:grid-rows-[auto] lg:gap-6">
-          <div className="col-span-1 row-span-1 bg-primary">
-            <span>hello</span>
-          </div>
-        </div>
+      <div className="flex h-full w-full flex-col items-center justify-center gap-4 lg:flex-row">
+        <h2 className="w-full text-xl text-zinc-400 lg:w-1/4">
+          Tecnologias que domino
+        </h2>
+        <TechCarousel className="w-full lg:w-3/4" />
       </div>
     </div>
   )

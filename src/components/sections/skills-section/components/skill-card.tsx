@@ -17,7 +17,7 @@ export default function SkillCard({
   return (
     <div
       className={cn(
-        'container flex flex-col items-center justify-center gap-4 rounded-md border border-zinc-400 py-4 shadow-md transition duration-300 hover:scale-105 hover:border-primary hover:text-primary hover:shadow-primary lg:gap-6',
+        'container flex flex-col items-center justify-around gap-4 rounded-md border border-zinc-400 py-4 shadow-md transition duration-300 hover:scale-105 hover:border-primary hover:text-primary hover:shadow-primary lg:gap-6',
         className,
       )}
       {...props}
