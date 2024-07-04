@@ -15,7 +15,7 @@ export default function TechCard({ icon, title, link }: techCardProps) {
       href={link}
       target="_blank"
     >
-      <div className="flex h-full w-full flex-col items-center justify-center">
+      <div className="flex h-full w-full flex-col items-center justify-around">
         <Image
           src={icon}
           className="w-20 fill-current text-zinc-400"
@@ -26,7 +26,7 @@ export default function TechCard({ icon, title, link }: techCardProps) {
         <span className="text-base font-medium text-foreground">{title}</span>
       </div>
       <div className="mt-auto flex w-full items-center justify-end">
-        <ExternalLink className="mr-6 h-4 w-4" />
+        <ExternalLink className="mr-6 h-5 w-5 text-accent" />
       </div>
     </Link>
   )

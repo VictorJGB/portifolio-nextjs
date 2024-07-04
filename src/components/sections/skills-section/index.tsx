@@ -18,7 +18,7 @@ export default function SkillSection() {
         <h1 className="text-3xl font-bold text-primary lg:text-heading-1">
           Minhas Habilidades
         </h1>
-        <h2 className="text-xl text-zinc-400 lg:text-3xl">
+        <h2 className="text-xl text-zinc-400 lg:text-2xl">
           Conheça um pouco da minha bagagem de conhecimento
         </h2>
       </div>

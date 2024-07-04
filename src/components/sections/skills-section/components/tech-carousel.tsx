@@ -23,6 +23,21 @@ const techData: techCardProps[] = [
     link: 'https://angular.dev/',
   },
   {
+    icon: '/sections/skills/react.svg',
+    title: 'React',
+    link: 'https://react.dev/',
+  },
+  {
+    icon: '/sections/skills/react.svg',
+    title: 'React Native',
+    link: 'https://reactnative.dev/',
+  },
+  {
+    icon: '/sections/skills/flutter.svg',
+    title: 'Flutter',
+    link: 'https://flutter.dev/',
+  },
+  {
     icon: '/sections/skills/typescript.svg',
     title: 'Typescript',
     link: 'https://www.typescriptlang.org/',

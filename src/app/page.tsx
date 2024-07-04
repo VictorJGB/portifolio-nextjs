@@ -1,4 +1,5 @@
 import AboutSection from '@/components/sections/about-section'
+import ExperienceSection from '@/components/sections/experiences-section'
 import HomeSection from '@/components/sections/home-section'
 import SkillSection from '@/components/sections/skills-section'
 
@@ -8,7 +9,7 @@ export default function Home() {
       <HomeSection />
       <AboutSection />
       <SkillSection />
-      <div className="col-span-1 row-span-1 bg-black"></div>
+      <ExperienceSection />
     </main>
   )
 }
