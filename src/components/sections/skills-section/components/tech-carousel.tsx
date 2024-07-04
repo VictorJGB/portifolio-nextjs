@@ -7,6 +7,7 @@ import {
 } from '@/components/ui/carousel'
 
 import Autoplay from 'embla-carousel-autoplay'
+
 import { ComponentProps } from 'react'
 import TechCard, { techCardProps } from './tech-card'
 
@@ -30,6 +31,11 @@ const techData: techCardProps[] = [
     icon: '/sections/skills/tailwindcss.svg',
     title: 'TailwindCSS',
     link: 'https://tailwindcss.com/',
+  },
+  {
+    icon: '/sections/skills/shadcnui.svg',
+    title: 'Shadcn UI',
+    link: 'https://ui.shadcn.com/',
   },
   {
     icon: '/sections/skills/react-hook-form.svg',
@@ -71,7 +77,7 @@ export default function TechCarousel({
       <CarouselContent>
         {techData.map((tech: techCardProps, index) => {
           return (
-            <CarouselItem className="basis-1/2" key={index}>
+            <CarouselItem className="basis-full p-0 sm:basis-1/2" key={index}>
               <TechCard {...tech} />
             </CarouselItem>
           )

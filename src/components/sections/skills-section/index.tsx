@@ -11,8 +11,9 @@ export default function SkillSection() {
   return (
     <div
       id="skills"
-      className="container col-span-1 row-span-1 flex flex-col items-center justify-around gap-6 py-4"
+      className="container col-span-1 row-span-1 flex flex-col items-center justify-around gap-8 py-4"
     >
+      {/* title */}
       <div className="grid w-full place-content-center place-items-center gap-3 py-2 text-center lg:py-5">
         <h1 className="text-3xl font-bold text-primary lg:text-heading-1">
           Minhas Habilidades
@@ -59,8 +60,8 @@ export default function SkillSection() {
       </div>
       {/* techs */}
       <div className="flex h-full w-full flex-col items-center justify-center gap-4 lg:flex-row">
-        <h2 className="w-full text-xl text-accent md:text-2xl lg:w-1/4">
-          Tecnologias que domino
+        <h2 className="w-full text-center text-2xl font-semibold text-accent lg:w-1/4 lg:text-start lg:text-3xl">
+          Tecnologias <br className="hidden lg:flex" /> que domino
         </h2>
         <TechCarousel className="w-full lg:w-3/4" />
       </div>

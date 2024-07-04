@@ -11,7 +11,7 @@ export type techCardProps = {
 export default function TechCard({ icon, title, link }: techCardProps) {
   return (
     <Link
-      className="flex h-full w-full flex-col items-center justify-center gap-4 rounded-xl border border-black py-6"
+      className="flex h-full w-full flex-col items-center justify-center gap-4 border-y border-r border-zinc-600 py-6"
       href={link}
       target="_blank"
     >
@@ -23,10 +23,10 @@ export default function TechCard({ icon, title, link }: techCardProps) {
           width={100}
           height={100}
         />
-        <span>{title}</span>
+        <span className="text-base font-medium text-foreground">{title}</span>
       </div>
-      <div className="mt-auto flex items-end justify-center">
-        <ExternalLink className="h-4 w-4" />
+      <div className="mt-auto flex w-full items-center justify-end">
+        <ExternalLink className="mr-6 h-4 w-4" />
       </div>
     </Link>
   )
