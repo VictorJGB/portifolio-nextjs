@@ -54,24 +54,23 @@ export default function ExperienceSection() {
   return (
     <div
       id="experiences"
-      className="col-span-1 row-span-1 flex w-full items-center justify-center bg-primary"
+      className="col-span-1 row-span-1 flex flex-col items-center justify-between gap-5 bg-primary py-6 lg:flex-row lg:gap-0 lg:py-0"
     >
-      {/* content */}
-      <div className="container flex h-full w-full flex-col items-center justify-between py-10 lg:flex-row lg:py-24">
-        {/* title */}
-        <div className="flex w-full flex-col items-center justify-center gap-2 md:w-1/2 md:items-start lg:h-full">
-          <h1 className="text-xl font-bold text-background md:text-3xl lg:text-heading-1">
+      {/* title */}
+      <div className="lg:bg-experience-section-title flex h-full w-full flex-col items-center justify-center bg-inherit lg:h-full lg:w-1/2">
+        <div className="flex h-full w-full flex-col items-center justify-center gap-2 bg-inherit px-3 backdrop-blur-sm lg:items-start lg:gap-5 lg:bg-black/60">
+          <h1 className="text-3xl font-bold text-background md:text-3xl lg:text-heading-1">
             Minhas experiências
           </h1>
-          <h2 className="text-lg font-semibold text-zinc-300 md:text-xl lg:text-2xl">
+          <h2 className="text-center text-xl font-semibold text-zinc-300 md:text-start lg:text-2xl">
             Conheça minhas vivências passadas
           </h2>
         </div>
-        <div className="flex h-full w-full flex-col items-center justify-center gap-3 md:w-1/2 md:items-start md:justify-start">
-          {experienceData.map((card, index) => {
-            return <ExperienceCard key={index} {...card} />
-          })}
-        </div>
+      </div>
+      <div className="flex h-full w-full flex-col items-center justify-center gap-3 bg-primary px-8 py-10 md:w-2/3 md:items-start md:justify-start lg:w-1/2 lg:py-24">
+        {experienceData.map((card, index) => {
+          return <ExperienceCard key={index} {...card} />
+        })}
       </div>
     </div>
   )
