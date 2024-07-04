@@ -59,7 +59,7 @@ export default function SkillSection() {
       </div>
       {/* techs */}
       <div className="flex h-full w-full flex-col items-center justify-center gap-4 lg:flex-row">
-        <h2 className="w-full text-xl text-zinc-400 lg:w-1/4">
+        <h2 className="w-full text-xl text-accent md:text-2xl lg:w-1/4">
           Tecnologias que domino
         </h2>
         <TechCarousel className="w-full lg:w-3/4" />

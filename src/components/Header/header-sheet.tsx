@@ -3,6 +3,7 @@
 import { Button } from '@/components/ui/button'
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetDescription,
   SheetFooter,
@@ -31,7 +32,7 @@ export default function HeaderSheet() {
           <Menu className="h-4 w-4" />
         </Button>
       </SheetTrigger>
-      <SheetContent>
+      <SheetContent onCloseAutoFocus={(event) => event.preventDefault()}>
         <SheetHeader>
           <SheetTitle>
             <span className="text-center text-xl font-bold sm:text-3xl">
@@ -45,53 +46,57 @@ export default function HeaderSheet() {
         <Separator className="my-2" />
         <div className="grid gap-4 py-4">
           {/* about me */}
-          <Button
-            variant={'outline'}
-            onClick={() => setIsOpen(false)}
-            className="border-[1.5px] border-primary text-primary"
-            asChild
-          >
-            <Link href="#about" className="text-foreground">
-              <LinkIcon className="mr-4 h-4 w-4" />
-              Sobre mim
-            </Link>
-          </Button>
+          <SheetClose asChild>
+            <Button
+              variant={'outline'}
+              className="border-[1.5px] border-primary text-primary"
+              asChild
+            >
+              <Link href="#about" className="text-foreground">
+                <LinkIcon className="mr-4 h-4 w-4" />
+                Sobre mim
+              </Link>
+            </Button>
+          </SheetClose>
           {/* skills */}
-          <Button
-            variant={'outline'}
-            onClick={() => setIsOpen(false)}
-            className="border-[1.5px] border-primary text-primary"
-            asChild
-          >
-            <Link href="#skills">
-              <LinkIcon className="mr-4 h-4 w-4" />
-              Habilidades
-            </Link>
-          </Button>
+          <SheetClose asChild>
+            <Button
+              variant={'outline'}
+              className="border-[1.5px] border-primary text-primary"
+              asChild
+            >
+              <Link href="#skills">
+                <LinkIcon className="mr-4 h-4 w-4" />
+                Habilidades
+              </Link>
+            </Button>
+          </SheetClose>
           {/* experiences */}
-          <Button
-            variant={'outline'}
-            onClick={() => setIsOpen(false)}
-            className="border-[1.5px] border-primary text-primary"
-            asChild
-          >
-            <Link href="#experiences" className="text-foreground">
-              <LinkIcon className="mr-4 h-4 w-4" />
-              Experiências
-            </Link>
-          </Button>
+          <SheetClose asChild>
+            <Button
+              variant={'outline'}
+              className="border-[1.5px] border-primary text-primary"
+              asChild
+            >
+              <Link href="#experiences" className="text-foreground">
+                <LinkIcon className="mr-4 h-4 w-4" />
+                Experiências
+              </Link>
+            </Button>
+          </SheetClose>
           {/* projects */}
-          <Button
-            variant={'outline'}
-            onClick={() => setIsOpen(false)}
-            className="border-[1.5px] border-primary text-primary"
-            asChild
-          >
-            <Link href="#projects" className="text-foreground">
-              <LinkIcon className="mr-4 h-4 w-4" />
-              Projetos
-            </Link>
-          </Button>
+          <SheetClose asChild>
+            <Button
+              variant={'outline'}
+              className="border-[1.5px] border-primary text-primary"
+              asChild
+            >
+              <Link href="#projects" className="text-foreground">
+                <LinkIcon className="mr-4 h-4 w-4" />
+                Projetos
+              </Link>
+            </Button>
+          </SheetClose>
         </div>
         <Separator className="my-3" />
         <SheetFooter>
