@@ -1,19 +1,20 @@
 'use client'
 
-import { ComponentProps } from 'react'
-import { Button } from '../ui/button'
+import { ComponentProps, ReactNode } from 'react'
+import { Button } from '../../ui/button'
 
 import { cn } from '@/lib/utils'
 
 type linkProps = {
-  text: string
   sectionID: string
+  isSheetButton: boolean
+  children: ReactNode
 }
 
 export default function LinkButton({
-  text,
   sectionID,
   className,
+  children,
   ...props
 }: linkProps & ComponentProps<'button'>) {
   function scrollTo(elementID: string) {
@@ -27,14 +28,14 @@ export default function LinkButton({
 
   return (
     <Button
+      onClick={() => scrollTo(sectionID)}
       className={cn(
         'bg-transparent text-base text-foreground transition hover:bg-transparent hover:text-primary',
         className,
       )}
-      onClick={() => scrollTo(sectionID)}
       {...props}
     >
-      {text}
+      {children}
     </Button>
   )
 }

@@ -65,7 +65,7 @@ export default function HeaderSheet() {
               className="border-[1.5px] border-primary text-primary"
               asChild
             >
-              <Link href="#skills">
+              <Link href="#skills" className="text-foreground">
                 <LinkIcon className="mr-4 h-4 w-4" />
                 Habilidades
               </Link>
