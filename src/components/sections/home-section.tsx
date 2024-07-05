@@ -15,7 +15,7 @@ export default function HomeSection() {
   return (
     <div
       id="home"
-      className="container col-span-1 row-span-1 flex flex-col items-center justify-center py-5 md:py-0"
+      className="py-section container col-span-1 row-span-1 flex flex-col items-center justify-center md:py-0"
     >
       <div className="flex h-full w-full flex-col items-center justify-around md:flex-row">
         {/* info container */}
