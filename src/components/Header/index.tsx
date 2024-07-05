@@ -1,7 +1,6 @@
-
+import HeaderSheet from './components/header-sheet'
 import LinkButton from './components/link-button'
-import HeaderSheet from './header-sheet'
-import StickyContainer from './sticky-container'
+import StickyContainer from './layout/sticky-container'
 
 export default function Header() {
   return (

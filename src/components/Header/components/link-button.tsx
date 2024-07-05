@@ -7,7 +7,6 @@ import { cn } from '@/lib/utils'
 
 type linkProps = {
   sectionID: string
-  isSheetButton: boolean
   children: ReactNode
 }
 

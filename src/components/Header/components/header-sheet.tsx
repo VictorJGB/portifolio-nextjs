@@ -20,7 +20,7 @@ import {
 import { Github, Instagram, LinkIcon, Linkedin, Mail, Menu } from 'lucide-react'
 import Link from 'next/link'
 import { useState } from 'react'
-import { Separator } from '../ui/separator'
+import { Separator } from '../../ui/separator'
 
 export default function HeaderSheet() {
   const [isOpen, setIsOpen] = useState<boolean>(false)
