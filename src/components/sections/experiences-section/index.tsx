@@ -6,7 +6,7 @@ const experienceData: ExperienceCardProps[] = [
   {
     title: 'Desenvolvimento na Empresa Vida',
     description:
-      ' fui responsável por desenvolver e manter aplicações web escaláveis e responsivas. Colaborei com equipes multidisciplinares para entregar projetos de alta qualidade, garantindo a satisfação dos clientes e o crescimento da empresa.',
+      'Fui responsável por desenvolver e manter aplicações web escaláveis e responsivas. Colaborei com equipes multidisciplinares para entregar projetos de alta qualidade, garantindo a satisfação dos clientes e o crescimento da empresa.',
     initialDate: '2024',
     lastDate: 'ATUAL',
     technologies: [
@@ -57,12 +57,12 @@ export default function ExperienceSection() {
       className="col-span-1 row-span-1 flex flex-col items-center justify-between gap-5 bg-primary py-6 lg:flex-row lg:gap-0 lg:py-0"
     >
       {/* title */}
-      <div className="lg:bg-experience-section-title flex h-full w-full flex-col items-center justify-center bg-inherit lg:h-full lg:w-1/2">
-        <div className="flex h-full w-full flex-col items-center justify-center gap-2 bg-inherit px-3 backdrop-blur-sm lg:items-start lg:gap-5 lg:bg-black/60">
-          <h1 className="text-3xl font-bold text-background md:text-3xl lg:text-heading-1">
+      <div className="flex h-full w-full flex-col items-center justify-center bg-inherit lg:h-full lg:w-1/2 lg:bg-experience-section-title">
+        <div className="flex h-full w-full flex-col items-center justify-center gap-2 bg-inherit pl-10 backdrop-blur-sm lg:items-start lg:justify-start lg:gap-5 lg:bg-black/60 lg:pt-40">
+          <h1 className="lg:3xl text-3xl font-bold text-background xl:text-heading-1">
             Minhas experiências
           </h1>
-          <h2 className="text-center text-xl font-semibold text-zinc-300 md:text-start lg:text-2xl">
+          <h2 className="text-center text-xl font-semibold text-zinc-300 md:text-start xl:text-2xl">
             Conheça minhas vivências passadas
           </h2>
         </div>

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 import HeaderSheet from './header-sheet'
+import LinkButton from './link-button'
 import StickyContainer from './sticky-container'
 
 export default function Header() {
@@ -11,18 +12,10 @@ export default function Header() {
           <h1 className="text-3xl font-bold text-foreground">Meu Portifólio</h1>
         </Link>
         <nav className="hidden items-center justify-center gap-3 text-base font-semibold lg:flex">
-          <Link href="#about" className="transition hover:text-primary">
-            Sobre mim
-          </Link>
-          <Link href="#skills" className="transition hover:text-primary">
-            Habilidades
-          </Link>
-          <Link href="#experiences" className="transition hover:text-primary">
-            Experiências
-          </Link>
-          <Link href="#projects" className="transition hover:text-primary">
-            Projetos
-          </Link>
+          <LinkButton text="Sobre mim" sectionID="about" />
+          <LinkButton text="Habilidades" sectionID="skills" />
+          <LinkButton text="Experiências" sectionID="experiences" />
+          <LinkButton text="Projetos" sectionID="projects" />
         </nav>
         <HeaderSheet />
       </header>
