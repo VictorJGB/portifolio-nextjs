@@ -14,7 +14,7 @@ export default function SkillSection() {
   return (
     <div
       id="skills"
-      className="py-section container col-span-1 row-span-1 grid grid-cols-1 grid-rows-[auto_auto_auto_auto] place-content-center place-items-center gap-8"
+      className="container col-span-1 row-span-1 grid grid-cols-1 grid-rows-[auto_auto_auto_auto] place-content-center place-items-center gap-8 py-section"
     >
       {/* title */}
       <div className="col-span-1 row-span-1 grid place-content-center place-items-center gap-3 py-2 text-center lg:py-5">

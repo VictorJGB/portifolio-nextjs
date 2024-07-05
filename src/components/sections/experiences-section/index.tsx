@@ -54,7 +54,7 @@ export default function ExperienceSection() {
   return (
     <div
       id="experiences"
-      className="py-section col-span-1 row-span-1 flex flex-col items-center justify-between gap-5 bg-primary lg:flex-row lg:gap-0 lg:py-0"
+      className="col-span-1 row-span-1 flex flex-col items-center justify-between gap-5 bg-primary py-section lg:flex-row lg:gap-0 lg:py-0"
     >
       {/* title */}
       <div className="flex h-full w-full flex-col items-center justify-center bg-inherit lg:h-full lg:w-1/2 lg:bg-experience-section-title">
