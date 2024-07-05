@@ -2,7 +2,7 @@ export default function ProjectSection() {
   return (
     <div
       id="projects"
-      className="container col-span-1 row-span-1 grid place-content-center place-items-center py-section"
+      className="py-section container col-span-1 row-span-1 grid place-content-center place-items-center"
     >
       <div className="col-span-1 row-span-1 grid place-items-center gap-4">
         <h1 className="text-3xl font-bold text-primary lg:text-heading-1">
