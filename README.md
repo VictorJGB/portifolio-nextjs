@@ -1,48 +1,103 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<a name="readme-top"></a>
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#demo">Demo</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#fonts">Fonts</a></li>
+  </ol>
+</details>
+
+<!-- ABOUT THE PROJECT -->
+
+## About The Project
+
+My personal portifolio using NextJS, TailwindCSS and ShadcnUI
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Built With
+
+- ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+- ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+- ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Live -->
+
+## Demo
+
+[Demo Link]()
+
+<!-- GETTING STARTED -->
 
 ## Getting Started
 
-### Attention!
+### Prerequisites
 
-- Remember to edit the ``package.json`` project name to your choice before installing the node modules, otherwise it will maintain the defaul 'next-eslint-shadcn-template' name, wich can lead to several bugs across your application.
-- Also, remember to edit the main ``layout.tsx`` Title to your choice
+- npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-Now that we made those changes, let's get started!
+### Installation
 
-First of all, install the node packages:
+1. Clone the repo
+   ```sh
+   git clone https://github.com/VictorJGB/portifolio-nextjs
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
 
-```bash
-npm install
-# or
-yarn install
-# or
-pnpm install
-```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Then, run the development server:
+<!-- USAGE EXAMPLES -->
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Usage
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+techs version used in the project
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<!-- CONTACT -->
 
-## Global styling
+## Contact
 
-This project uses [`shadcnUI`](https://ui.shadcn.com/) for components and global styles, be sure to edit the `global.css` file to add your global variables to the project.
+- <a href = "mailto:victorgb.dev@gmail.com" target="_blank"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" ></a>
 
-Also, be sure to edit your `tailwind.config.ts` to add your customized classes based on your `global.css` variables. [`See more`](https://tailwindcss.com/docs/configuration)
+- <a href="https://www.linkedin.com/in/jerry-dev-084793203" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" ></a>
+
+- <a href="https://instagram.com/_jerryGB" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Fonts -->
+
+## Fonts
+
+- [badges](https://github.com/Ileriayo/markdown-badges)
 
 ## Author
 
-<a href="https://github.com/VictorJGB"><img src="https://github.com/funerariavida/next-eslint-shadcn-template/assets/135644061/1a5fe0dc-cf52-48ed-a123-ee242bf45265" width="200" /><a/>
-
-
+<a href="https://www.linkedin.com/in/jerry-dev-084793203/">
+  <img width="150" height="150" src="https://user-images.githubusercontent.com/62398638/226929073-2c757280-6acf-4641-9fc1-bd7bb1f0485c.jpeg" />
+<a/>
