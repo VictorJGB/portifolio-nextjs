@@ -11,9 +11,9 @@ export default function Header() {
         </LinkButton>
         <nav className="hidden items-center justify-center gap-3 text-base font-semibold lg:flex">
           <LinkButton sectionID="about">Sobre mim</LinkButton>
-          <LinkButton sectionID="about">Habilidades</LinkButton>
-          <LinkButton sectionID="about">Experiências</LinkButton>
-          <LinkButton sectionID="about">Projetos</LinkButton>
+          <LinkButton sectionID="skills">Habilidades</LinkButton>
+          <LinkButton sectionID="experiences">Experiências</LinkButton>
+          <LinkButton sectionID="projects">Projetos</LinkButton>
         </nav>
         <HeaderSheet />
       </header>

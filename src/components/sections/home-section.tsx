@@ -21,7 +21,7 @@ export default function HomeSection() {
         {/* info container */}
         <div className="flex flex-1 flex-col items-center justify-center gap-2 md:w-1/2 md:items-start md:justify-start">
           <div className="flex w-full flex-col items-center justify-center gap-2 md:items-start lg:gap-4">
-            <h1 className="text-center text-3xl font-bold text-foreground md:text-start lg:text-heading-1">
+            <h1 className="text-center text-3xl font-bold text-foreground md:text-start lg:text-heading-1 lg:leading-10">
               Seja bem vindo(a), me chamo
             </h1>
             <strong className="text-3xl font-bold text-primary md:text-start lg:text-heading-1">
@@ -120,7 +120,7 @@ export default function HomeSection() {
           </div>
         </div>
         {/* image container */}
-        <div className="flex w-2/3 flex-col items-center justify-center md:w-1/2">
+        <div className="flex w-2/3 flex-col items-center justify-center sm:w-1/2">
           <Image
             className="max-w-full"
             src={'/sections/home/profile.png'}
