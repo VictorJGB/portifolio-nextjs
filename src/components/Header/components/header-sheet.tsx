@@ -17,12 +17,29 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip'
-import { Github, Instagram, LinkIcon, Linkedin, Mail, Menu } from 'lucide-react'
+import {
+  Github,
+  Home,
+  Instagram,
+  LinkIcon,
+  Linkedin,
+  Mail,
+  Menu,
+} from 'lucide-react'
 import Link from 'next/link'
 import { useState } from 'react'
 import { Separator } from '../../ui/separator'
 
 export default function HeaderSheet() {
+  function scrollTo(elementID: string) {
+    const element = document.getElementById(elementID)
+    if (element) {
+      window.scroll({
+        top: element.offsetTop - 80,
+      })
+    }
+  }
+
   const [isOpen, setIsOpen] = useState<boolean>(false)
 
   return (
@@ -44,18 +61,28 @@ export default function HeaderSheet() {
           </SheetDescription>
         </SheetHeader>
         <Separator className="my-2" />
+        <div className="flex w-full items-center justify-center py-2">
+          <SheetClose asChild>
+            <Button
+              className="w-full border-[1.5px] text-primary-foreground"
+              onClick={() => scrollTo('home')}
+            >
+              <Home className="mr-4 h-4 w-4" />
+              Início
+            </Button>
+          </SheetClose>
+        </div>
+        <Separator className="my-2" />
         <div className="grid gap-4 py-4">
           {/* about me */}
           <SheetClose asChild>
             <Button
               variant={'outline'}
               className="border-[1.5px] border-primary text-primary"
-              asChild
+              onClick={() => scrollTo('about')}
             >
-              <Link href="#about" className="text-foreground">
-                <LinkIcon className="mr-4 h-4 w-4" />
-                Sobre mim
-              </Link>
+              <LinkIcon className="mr-4 h-4 w-4" />
+              Sobre mim
             </Button>
           </SheetClose>
           {/* skills */}
@@ -63,12 +90,10 @@ export default function HeaderSheet() {
             <Button
               variant={'outline'}
               className="border-[1.5px] border-primary text-primary"
-              asChild
+              onClick={() => scrollTo('skills')}
             >
-              <Link href="#skills" className="text-foreground">
-                <LinkIcon className="mr-4 h-4 w-4" />
-                Habilidades
-              </Link>
+              <LinkIcon className="mr-4 h-4 w-4" />
+              Habilidades
             </Button>
           </SheetClose>
           {/* experiences */}
@@ -76,12 +101,10 @@ export default function HeaderSheet() {
             <Button
               variant={'outline'}
               className="border-[1.5px] border-primary text-primary"
-              asChild
+              onClick={() => scrollTo('experiences')}
             >
-              <Link href="#experiences" className="text-foreground">
-                <LinkIcon className="mr-4 h-4 w-4" />
-                Experiências
-              </Link>
+              <LinkIcon className="mr-4 h-4 w-4" />
+              Experiências
             </Button>
           </SheetClose>
           {/* projects */}
@@ -89,12 +112,10 @@ export default function HeaderSheet() {
             <Button
               variant={'outline'}
               className="border-[1.5px] border-primary text-primary"
-              asChild
+              onClick={() => scrollTo('projects')}
             >
-              <Link href="#projects" className="text-foreground">
-                <LinkIcon className="mr-4 h-4 w-4" />
-                Projetos
-              </Link>
+              <LinkIcon className="mr-4 h-4 w-4" />
+              Projetos
             </Button>
           </SheetClose>
         </div>
