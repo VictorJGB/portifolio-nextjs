@@ -1,6 +1,7 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
+import { Separator } from '@/components/ui/separator'
 import {
   Sheet,
   SheetClose,
@@ -28,18 +29,10 @@ import {
 } from 'lucide-react'
 import Link from 'next/link'
 import { useState } from 'react'
-import { Separator } from '../../ui/separator'
+
+import { scrollTo } from '@/lib/utils'
 
 export default function HeaderSheet() {
-  function scrollTo(elementID: string) {
-    const element = document.getElementById(elementID)
-    if (element) {
-      window.scroll({
-        top: element.offsetTop - 80,
-      })
-    }
-  }
-
   const [isOpen, setIsOpen] = useState<boolean>(false)
 
   return (

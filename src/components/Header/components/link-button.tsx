@@ -3,7 +3,7 @@
 import { ComponentProps, ReactNode } from 'react'
 import { Button } from '../../ui/button'
 
-import { cn } from '@/lib/utils'
+import { cn, scrollTo } from '@/lib/utils'
 
 type linkProps = {
   sectionID: string
@@ -16,15 +16,6 @@ export default function LinkButton({
   children,
   ...props
 }: linkProps & ComponentProps<'button'>) {
-  function scrollTo(elementID: string) {
-    const element = document.getElementById(elementID)
-    if (element) {
-      window.scroll({
-        top: element.offsetTop - 80,
-      })
-    }
-  }
-
   return (
     <Button
       onClick={() => scrollTo(sectionID)}

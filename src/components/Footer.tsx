@@ -1,6 +1,10 @@
+'use client'
+
 import Link from 'next/link'
 
+import { scrollTo } from '@/lib/utils'
 import { Github, Instagram, Linkedin, Mail, Phone } from 'lucide-react'
+import { Button } from './ui/button'
 import {
   Tooltip,
   TooltipContent,
@@ -13,32 +17,45 @@ export default function Footer() {
     <footer className="row-span-1 flex w-full flex-col items-center justify-around gap-4 bg-black py-4 sm:flex-row sm:gap-0">
       {/* links */}
       <div className="flex h-full flex-col items-center justify-center sm:items-start sm:justify-start">
-        <h2 className="text-start text-xl font-bold text-primary">Links</h2>
+        <h2 className="my-2 text-start text-xl font-bold text-primary">
+          Links
+        </h2>
         <nav className="flex flex-col items-center justify-center sm:items-start sm:justify-start">
-          <Link
-            href="#home"
-            className="text-base text-background hover:text-accent"
+          <Button
+            variant={'link'}
+            onClick={() => scrollTo('home')}
+            className="h-0 p-0 py-3 text-base text-background hover:text-accent"
           >
             Inicio
-          </Link>
-          <Link
-            href="#about"
-            className="text-base text-background hover:text-accent"
+          </Button>
+          <Button
+            variant={'link'}
+            onClick={() => scrollTo('about')}
+            className="h-0 p-0 py-3 text-base text-background hover:text-accent"
           >
             Sobre mim
-          </Link>
-          <Link
-            href="#skills"
-            className="text-base text-background hover:text-accent"
+          </Button>
+          <Button
+            variant={'link'}
+            onClick={() => scrollTo('skills')}
+            className="h-0 p-0 py-3 text-base text-background hover:text-accent"
           >
             Habilidades
-          </Link>
-          <Link
-            href="#projects"
-            className="text-base text-background hover:text-accent"
+          </Button>
+          <Button
+            variant={'link'}
+            onClick={() => scrollTo('experiences')}
+            className="h-0 p-0 py-3 text-base text-background hover:text-accent"
+          >
+            Experiências
+          </Button>
+          <Button
+            variant={'link'}
+            onClick={() => scrollTo('projects')}
+            className="h-0 p-0 py-3 text-base text-background hover:text-accent"
           >
             Projetos
-          </Link>
+          </Button>
         </nav>
       </div>
 
